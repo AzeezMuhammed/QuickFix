@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QuickFix — Find Trusted Local Professionals</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="QuickFix-styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#">
+        <span class="brand-mark">Q</span>
+        <span>QuickFix</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#professionals">Professionals</a>
+        <a href="#provider">Become a provider</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn btn-ghost" id="loginBtn">Log in</button>
+        <button class="btn btn-primary" id="getStartedBtn">Get started</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Trusted local services, made simple</span>
+          <h1>Find the right professional for the job.</h1>
+          <p>
+            QuickFix connects you with trusted plumbers, electricians, cleaners,
+            mechanics and other local professionals — right when you need them.
+          </p>
+
+          <div class="hero-actions">
+            <button class="btn btn-primary btn-large" id="heroStartBtn">Find a professional</button>
+            <a class="btn btn-outline btn-large" href="#how-it-works">How it works</a>
+          </div>
+
+          <div class="trust-mini">
+            <div class="avatar-stack">
+              <span>AO</span><span>MK</span><span>TA</span><span>+2k</span>
+            </div>
+            <div>
+              <strong>2,000+ customers</strong>
+              <small>already using QuickFix</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-card main-card">
+            <div class="card-top">
+              <span class="status-dot"></span>
+              <span>Available now</span>
+              <span class="location">Ibadan</span>
+            </div>
+
+            <div class="provider-preview">
+              <div class="provider-photo photo-one">TA</div>
+              <div>
+                <h3>Tunde Adeyemi</h3>
+                <p>Professional Plumber</p>
+                <div class="rating">★ 4.9 <span>(124 reviews)</span></div>
+              </div>
+            </div>
+
+            <div class="provider-meta">
+              <span>✓ Verified</span>
+              <span>₦5,000 starting</span>
+              <span>15 min away</span>
+            </div>
+
+            <button class="btn btn-primary full-width" data-service="Plumbing">View profile</button>
+          </div>
+
+          <div class="floating-card floating-one">
+            <span class="float-icon">✓</span>
+            <div>
+              <strong>Verified professionals</strong>
+              <small>Identity checked</small>
+            </div>
+          </div>
+
+          <div class="floating-card floating-two">
+            <span class="float-icon">₦</span>
+            <div>
+              <strong>Secure payments</strong>
+              <small>Pay safely in-app</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-row">
+      <div class="container trust-grid">
+        <div><strong>2,000+</strong><span>Professionals</span></div>
+        <div><strong>15k+</strong><span>Jobs completed</span></div>
+        <div><strong>4.8/5</strong><span>Average rating</span></div>
+        <div><strong>24/7</strong><span>Support</span></div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">Popular services</span>
+            <h2>What do you need help with?</h2>
+          </div>
+          <p>Choose a service and find a trusted professional near you.</p>
+        </div>
+
+        <div class="service-grid">
+          <button class="service-card" data-service="Plumbing">
+            <span class="service-icon">🔧</span>
+            <strong>Plumbing</strong>
+            <span>Leaks, pipes & repairs</span>
+          </button>
+
+          <button class="service-card" data-service="Electrical">
+            <span class="service-icon">⚡</span>
+            <strong>Electrical</strong>
+            <span>Wiring, repairs & installs</span>
+          </button>
+
+          <button class="service-card" data-service="Cleaning">
+            <span class="service-icon">🧹</span>
+            <strong>Cleaning</strong>
+            <span>Home & office cleaning</span>
+          </button>
+
+          <button class="service-card" data-service="Mechanic">
+            <span class="service-icon">🚗</span>
+            <strong>Mechanic</strong>
+            <span>Car diagnostics & repairs</span>
+          </button>
+
+          <button class="service-card" data-service="AC Repair">
+            <span class="service-icon">❄️</span>
+            <strong>AC Repair</strong>
+            <span>Cooling & maintenance</span>
+          </button>
+
+          <button class="service-card" data-service="Carpentry">
+            <span class="service-icon">🪚</span>
+            <strong>Carpentry</strong>
+            <span>Furniture & woodwork</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section soft-bg" id="how-it-works">
+      <div class="container">
+        <div class="section-heading centered">
+          <span class="eyebrow">Simple process</span>
+          <h2>Get your job done in four steps</h2>
+          <p>No endless calls. No guesswork. Just find, book and get it fixed.</p>
+        </div>
+
+        <div class="steps-grid">
+          <div class="step-card">
+            <span class="step-number">01</span>
+            <h3>Choose a service</h3>
+            <p>Tell us what kind of help you need and where you are.</p>
+          </div>
+          <div class="step-card">
+            <span class="step-number">02</span>
+            <h3>Compare professionals</h3>
+            <p>Review profiles, prices, ratings and availability.</p>
+          </div>
+          <div class="step-card">
+            <span class="step-number">03</span>
+            <h3>Book & pay</h3>
+            <p>Select a time, share the job details and pay securely.</p>
+          </div>
+          <div class="step-card">
+            <span class="step-number">04</span>
+            <h3>Get it fixed</h3>
+            <p>Track your professional and review the service when complete.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="professionals">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">Top professionals</span>
+            <h2>Trusted people near you</h2>
+          </div>
+          <button class="btn btn-outline" id="viewAllBtn">View all</button>
+        </div>
+
+        <div class="professional-grid">
+          <article class="professional-card">
+            <div class="profile-top">
+              <div class="provider-photo photo-two">KA</div>
+              <span class="verified">✓ Verified</span>
+            </div>
+            <h3>Kemi Adebayo</h3>
+            <p>Home & Office Cleaner</p>
+            <div class="rating">★ 4.9 <span>86 reviews</span></div>
+            <div class="profile-details">
+              <span>📍 Ibadan</span>
+              <span>₦4,000+</span>
+            </div>
+            <button class="btn btn-outline full-width" data-service="Cleaning">View profile</button>
+          </article>
+
+          <article class="professional-card">
+            <div class="profile-top">
+              <div class="provider-photo photo-three">BA</div>
+              <span class="verified">✓ Verified</span>
+            </div>
+            <h3>Bolaji Adekunle</h3>
+            <p>Electrician</p>
+            <div class="rating">★ 4.8 <span>102 reviews</span></div>
+            <div class="profile-details">
+              <span>📍 Ibadan</span>
+              <span>₦5,500+</span>
+            </div>
+            <button class="btn btn-outline full-width" data-service="Electrical">View profile</button>
+          </article>
+
+          <article class="professional-card">
+            <div class="profile-top">
+              <div class="provider-photo photo-four">YM</div>
+              <span class="verified">✓ Verified</span>
+            </div>
+            <h3>Yusuf Musa</h3>
+            <p>Auto Mechanic</p>
+            <div class="rating">★ 4.9 <span>73 reviews</span></div>
+            <div class="profile-details">
+              <span>📍 Ibadan</span>
+              <span>₦6,000+</span>
+            </div>
+            <button class="btn btn-outline full-width" data-service="Mechanic">View profile</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="provider-cta" id="provider">
+      <div class="container provider-cta-inner">
+        <div>
+          <span class="eyebrow light">For professionals</span>
+          <h2>Turn your skills into more jobs.</h2>
+          <p>Join QuickFix, showcase your work and connect with customers looking for your service.</p>
+        </div>
+        <button class="btn btn-white" id="providerBtn">Become a provider</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="#">
+          <span class="brand-mark">Q</span>
+          <span>QuickFix</span>
+        </a>
+        <p>Reliable local services, whenever you need them.</p>
+      </div>
+
+      <div>
+        <h4>QuickFix</h4>
+        <a href="#services">Services</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#professionals">Professionals</a>
+      </div>
+
+      <div>
+        <h4>For professionals</h4>
+        <a href="#provider">Become a provider</a>
+        <a href="#">Provider login</a>
+        <a href="#">Resources</a>
+      </div>
+
+      <div>
+        <h4>Support</h4>
+        <a href="#">Help center</a>
+        <a href="#">Contact us</a>
+        <a href="#">Safety</a>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>© 2026 QuickFix. All rights reserved.</span>
+      <span>Built for local communities.</span>
+    </div>
+  </footer>
+
+  <div class="modal-overlay" id="authModal">
+    <div class="auth-modal">
+      <button class="modal-close" id="modalClose">×</button>
+      <span class="eyebrow">Welcome to QuickFix</span>
+      <h2 id="modalTitle">Get started</h2>
+      <p id="modalSubtitle">Create an account to book trusted professionals.</p>
+
+      <form id="authForm">
+        <label>
+          Full name
+          <input type="text" id="nameInput" placeholder="e.g. Muheez Olayiwola" required />
+        </label>
+
+        <label>
+          Email
+          <input type="email" placeholder="you@example.com" required />
+        </label>
+
+        <label>
+          Password
+          <input type="password" placeholder="••••••••" required />
+        </label>
+
+        <button class="btn btn-primary full-width" type="submit">Continue</button>
+      </form>
+
+      <p class="modal-note">Demo form — connect this to your backend later.</p>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
