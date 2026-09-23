@@ -18,22 +18,7 @@
   --danger: #DC2626;         /* Red */
   --radius: 18px;
   --shadow: 0 12px 35px rgba(28, 25, 23, 0.08);
-}:
-  --primary: #2563eb;
-  --primary-dark: #1d4ed8;
-  --navy: #0f172a;
-  --text: #334155;
-  --muted: #64748b;
-  --border: #e2e8f0;
-  --soft: #f8fafc;
-  --white: #ffffff;
-  --success: #16a34a;
-  --warning: #f59e0b;
-  --danger: #dc2626;
-  --radius: 18px;
-  --shadow: 0 12px 35px rgba(15, 23, 42, 0.08);
-
-
+}
 html {
   scroll-behavior: smooth;
 }
